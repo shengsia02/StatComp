@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>StatComp_411078064_</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>StatComp_411078064_Component_Reliability</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14579,7 +14579,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3><strong><font color=cornflowerblue>第六次作品：元件間連接方式的可靠度分析與模擬 </font></strong></h3>
+<h3><strong><font color=cornflowerblue>第六次作品：不同元件結構的可靠度分析與模擬 </font></strong></h3>
 <p>學號：411078064</p>
 <p>姓名：謝意盛</p>
 <hr>
@@ -14604,12 +14604,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">platform</span> <span class="kn">import</span> <span class="n">python_version</span>
@@ -14622,41 +14622,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">minimize</span>
 <span class="kn">import</span> <span class="nn">concurrent.futures</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;【日期時間】</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y/%m/</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;【工作目錄】</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;【主機名稱】</span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2">)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">gethostname</span><span class="p">(),</span><span class="n">socket</span><span class="o">.</span><span class="n">gethostbyname</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">gethostname</span><span class="p">())))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;【Python】</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">python_version</span><span class="p">()))</span>
+<span class="c1"># print(&quot;【日期時間】{}&quot;.format(time.strftime(&quot;%Y/%m/%d %H:%M:%S&quot;)))</span>
+<span class="c1"># print(&quot;【工作目錄】{}&quot;.format(os.getcwd()))</span>
+<span class="c1"># print(&quot;【主機名稱】{} ({})&quot;.format(socket.gethostname(),socket.gethostbyname(socket.gethostname())))</span>
+<span class="c1"># print(&quot;【Python】{}&quot;.format(python_version()))</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>【日期時間】2024/12/22 13:37:25
-【工作目錄】c:\Users\Sheng\Desktop\StatComp\hw6
-【主機名稱】LAPTOP-VLOELI2C (10.201.4.176)
-【Python】3.11.3
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -14778,7 +14752,7 @@ $$ b = (1 - \bar{x})\left(\frac{\bar{x}(1 - \bar{x})}{s^2} - 1\right) $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## 初始設定</span>
@@ -14912,85 +14886,85 @@ $$ b = (1 - \bar{x})\left(\frac{\bar{x}(1 - \bar{x})}{s^2} - 1\right) $$</p>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[75]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <style type="text/css">
-#T_2c541 tr {
+#T_eaff9 tr {
   border-top: 1px solid #666666;
 }
-#T_2c541 tr {
+#T_eaff9 tr {
   border-bottom: 1px solid #666666;
 }
 </style>
-<table id="T_2c541">
+<table id="T_eaff9">
   <thead>
     <tr>
       <th class="blank level0" >&nbsp;</th>
-      <th id="T_2c541_level0_col0" class="col_heading level0 col0" >Method</th>
-      <th id="T_2c541_level0_col1" class="col_heading level0 col1" >a_hat_Avg</th>
-      <th id="T_2c541_level0_col2" class="col_heading level0 col2" >b_hat_Avg</th>
-      <th id="T_2c541_level0_col3" class="col_heading level0 col3" >Times_Avg</th>
+      <th id="T_eaff9_level0_col0" class="col_heading level0 col0" >Method</th>
+      <th id="T_eaff9_level0_col1" class="col_heading level0 col1" >a_hat_Avg</th>
+      <th id="T_eaff9_level0_col2" class="col_heading level0 col2" >b_hat_Avg</th>
+      <th id="T_eaff9_level0_col3" class="col_heading level0 col3" >Times_Avg</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_2c541_level0_row0" class="row_heading level0 row0" >0</th>
-      <td id="T_2c541_row0_col0" class="data row0 col0" >SLSQP</td>
-      <td id="T_2c541_row0_col1" class="data row0 col1" >6.000000</td>
-      <td id="T_2c541_row0_col2" class="data row0 col2" >8.000000</td>
-      <td id="T_2c541_row0_col3" class="data row0 col3" >1.576960</td>
+      <th id="T_eaff9_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_eaff9_row0_col0" class="data row0 col0" >SLSQP</td>
+      <td id="T_eaff9_row0_col1" class="data row0 col1" >6.000000</td>
+      <td id="T_eaff9_row0_col2" class="data row0 col2" >8.000000</td>
+      <td id="T_eaff9_row0_col3" class="data row0 col3" >2.563112</td>
     </tr>
     <tr>
-      <th id="T_2c541_level0_row1" class="row_heading level0 row1" >1</th>
-      <td id="T_2c541_row1_col0" class="data row1 col0" >TNC</td>
-      <td id="T_2c541_row1_col1" class="data row1 col1" >6.000000</td>
-      <td id="T_2c541_row1_col2" class="data row1 col2" >8.000000</td>
-      <td id="T_2c541_row1_col3" class="data row1 col3" >2.035164</td>
+      <th id="T_eaff9_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_eaff9_row1_col0" class="data row1 col0" >TNC</td>
+      <td id="T_eaff9_row1_col1" class="data row1 col1" >6.000000</td>
+      <td id="T_eaff9_row1_col2" class="data row1 col2" >8.000000</td>
+      <td id="T_eaff9_row1_col3" class="data row1 col3" >3.013415</td>
     </tr>
     <tr>
-      <th id="T_2c541_level0_row2" class="row_heading level0 row2" >2</th>
-      <td id="T_2c541_row2_col0" class="data row2 col0" >L-BFGS-B</td>
-      <td id="T_2c541_row2_col1" class="data row2 col1" >6.000000</td>
-      <td id="T_2c541_row2_col2" class="data row2 col2" >8.000000</td>
-      <td id="T_2c541_row2_col3" class="data row2 col3" >2.205780</td>
+      <th id="T_eaff9_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_eaff9_row2_col0" class="data row2 col0" >L-BFGS-B</td>
+      <td id="T_eaff9_row2_col1" class="data row2 col1" >6.000000</td>
+      <td id="T_eaff9_row2_col2" class="data row2 col2" >8.000000</td>
+      <td id="T_eaff9_row2_col3" class="data row2 col3" >3.131066</td>
     </tr>
     <tr>
-      <th id="T_2c541_level0_row3" class="row_heading level0 row3" >3</th>
-      <td id="T_2c541_row3_col0" class="data row3 col0" >Powell</td>
-      <td id="T_2c541_row3_col1" class="data row3 col1" >5.999997</td>
-      <td id="T_2c541_row3_col2" class="data row3 col2" >8.000001</td>
-      <td id="T_2c541_row3_col3" class="data row3 col3" >7.141543</td>
+      <th id="T_eaff9_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_eaff9_row3_col0" class="data row3 col0" >Powell</td>
+      <td id="T_eaff9_row3_col1" class="data row3 col1" >5.999997</td>
+      <td id="T_eaff9_row3_col2" class="data row3 col2" >8.000001</td>
+      <td id="T_eaff9_row3_col3" class="data row3 col3" >13.773516</td>
     </tr>
     <tr>
-      <th id="T_2c541_level0_row4" class="row_heading level0 row4" >4</th>
-      <td id="T_2c541_row4_col0" class="data row4 col0" >COBYLA</td>
-      <td id="T_2c541_row4_col1" class="data row4 col1" >5.999922</td>
-      <td id="T_2c541_row4_col2" class="data row4 col2" >8.000063</td>
-      <td id="T_2c541_row4_col3" class="data row4 col3" >11.935675</td>
+      <th id="T_eaff9_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_eaff9_row4_col0" class="data row4 col0" >COBYLA</td>
+      <td id="T_eaff9_row4_col1" class="data row4 col1" >5.999922</td>
+      <td id="T_eaff9_row4_col2" class="data row4 col2" >8.000063</td>
+      <td id="T_eaff9_row4_col3" class="data row4 col3" >22.144517</td>
     </tr>
     <tr>
-      <th id="T_2c541_level0_row5" class="row_heading level0 row5" >5</th>
-      <td id="T_2c541_row5_col0" class="data row5 col0" >COBYQA</td>
-      <td id="T_2c541_row5_col1" class="data row5 col1" >6.000000</td>
-      <td id="T_2c541_row5_col2" class="data row5 col2" >8.000000</td>
-      <td id="T_2c541_row5_col3" class="data row5 col3" >12.878393</td>
+      <th id="T_eaff9_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_eaff9_row5_col0" class="data row5 col0" >trust-constr</td>
+      <td id="T_eaff9_row5_col1" class="data row5 col1" >6.000015</td>
+      <td id="T_eaff9_row5_col2" class="data row5 col2" >8.000021</td>
+      <td id="T_eaff9_row5_col3" class="data row5 col3" >26.120986</td>
     </tr>
     <tr>
-      <th id="T_2c541_level0_row6" class="row_heading level0 row6" >6</th>
-      <td id="T_2c541_row6_col0" class="data row6 col0" >trust-constr</td>
-      <td id="T_2c541_row6_col1" class="data row6 col1" >6.000015</td>
-      <td id="T_2c541_row6_col2" class="data row6 col2" >8.000021</td>
-      <td id="T_2c541_row6_col3" class="data row6 col3" >19.424022</td>
+      <th id="T_eaff9_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_eaff9_row6_col0" class="data row6 col0" >COBYQA</td>
+      <td id="T_eaff9_row6_col1" class="data row6 col1" >6.000000</td>
+      <td id="T_eaff9_row6_col2" class="data row6 col2" >8.000000</td>
+      <td id="T_eaff9_row6_col3" class="data row6 col3" >26.381039</td>
     </tr>
     <tr>
-      <th id="T_2c541_level0_row7" class="row_heading level0 row7" >7</th>
-      <td id="T_2c541_row7_col0" class="data row7 col0" >Nelder-Mead</td>
-      <td id="T_2c541_row7_col1" class="data row7 col1" >6.000000</td>
-      <td id="T_2c541_row7_col2" class="data row7 col2" >8.000000</td>
-      <td id="T_2c541_row7_col3" class="data row7 col3" >19.608117</td>
+      <th id="T_eaff9_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_eaff9_row7_col0" class="data row7 col0" >Nelder-Mead</td>
+      <td id="T_eaff9_row7_col1" class="data row7 col1" >6.000000</td>
+      <td id="T_eaff9_row7_col2" class="data row7 col2" >8.000000</td>
+      <td id="T_eaff9_row7_col3" class="data row7 col3" >29.784690</td>
     </tr>
   </tbody>
 </table>
@@ -16119,7 +16093,7 @@ $$Z_1 = 1 - (1 - (WXY)) ^ 2$$</p>
 $$Z_2 = (1 - (1 - W) ^ 2)(1 - (1 - X) ^ 2)(1 - (1 - Y) ^ 2)$$</p>
 <p>但是，由於 $Z_1$, $Z_2$ 都是包含三種變數的非線性組合，故其分佈無法像前兩目標一樣直接推導出封閉形式的機率密度函數，只能在無法通過數學推導來獲得 $Z_1$, $Z_2$ 的真實 PDF 的情況下利用模擬計算的方式來估計出 $Z_1$, $Z_2$ 的分佈。</p>
 <p>$\quad$</p>
-<p>令 $W$, $X$, $Y$ 的 Beta PDF 的參數分別為 $(a_1, b_1)=(6, 3), (a_2, b_2)=(9, 5), (a_2, b_2)=(7, 4)$，通過分別生成 $W$, $X$ 與 $Y$ 的隨機樣本，直接去進行計算，獲得 $Z_1$, $Z_2$ 的樣本。接著，分別使用「最大概似估計（MLE）」、「動差估計（MME）」及「核密度估計（KDE）」來估計出此樣本的 Beta 分佈參數值，通過相互比較來選擇出最適合的參數估計方法。</p>
+<p>令 $W$, $X$, $Y$ 的 Beta PDF 的參數分別為 $(a_1, b_1)=(6, 3), (a_2, b_2)=(9, 5), (a_3, b_3)=(7, 4)$，通過分別生成 $W$, $X$ 與 $Y$ 的隨機樣本，直接去進行計算，獲得 $Z_1$, $Z_2$ 的樣本。接著，分別使用「最大概似估計（MLE）」、「動差估計（MME）」及「核密度估計（KDE）」來估計出此樣本的 Beta 分佈參數值，通過相互比較來選擇出最適合的參數估計方法。</p>
 <ul>
 <li><p>MLE 在 Python 裡可使用的計算方式：</p>
 <ul>
@@ -16395,7 +16369,7 @@ class="
 <h4><strong><font color=cornflowerblue>注意事項與討論：</font></strong></h4>
 <p><strong><font color=lightseagreen>觀察</font></strong>：</p>
 <ul>
-<li><p>先串聯後並聯的系統 $Z_1$：</p>
+<li><p><font color=indianred>先串聯後並聯</font>的系統 $Z_1$：</p>
 <ul>
 <li><p>從圖中可見，三種方法（MLE、MME、KDE）估計的參數值差異不大，且它們繪製出的 PDF 曲線均涵蓋了樣本直方圖的範圍，顯示這三種方法在參數估計上的表現相當不錯。</p>
 </li>
@@ -16403,7 +16377,7 @@ class="
 </li>
 </ul>
 </li>
-<li><p>先並聯後串聯的系統 $Z_2$：</p>
+<li><p><font color=indianred>先並聯後串聯</font>的系統 $Z_2$：</p>
 <ul>
 <li><p>從圖中可見，MLE 和 MME 所估計的參數值非常接近，但與 KDE 存在一定差異。然而，從圖形比較可以發現，由 KDE 所估計的分佈曲線與樣本直方圖更為貼合，因此可判定 KDE 在參數估計方面的表現優於其他兩種方法。</p>
 </li>
@@ -16443,31 +16417,117 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>1. 串聯系統的變數表達式以及機率密度函數的推導過程</strong></p>
+<p><strong>1. 串聯系統的變數與機率密度函數的推導過程</strong></p>
 <ul>
-<li><p>串聯系統的變數表達式：</p>
-<ul>
-<li><p>令兩獨立變數分別為元件 $X$ 與 $Y$ 的可靠度，分佈為 $X \sim \beta(a_1, b_1)$，$Y \sim \beta(a_2, b_2)$。若要將它們以串聯的方式連接在一起組成一個新的組合元件（$Z$ 表示為此組合元件的可靠度變數），則只要將變數 $X$ 與 $Y$ 兩者相乘，即 $Z = XY$，便代表新的組合元件 $Z$ 的可靠度。</p>
+<li><p>變數的推導邏輯：</p>
+<p>在串聯系統中，假設兩個元件的可靠度分別為 $X$ 和 $Y$，它們遵循獨立的 <strong>Beta</strong> 分佈：
+  $$X \sim \beta(a_1, b_1)，Y \sim \beta(a_2, b_2)$$
+  串聯系統的可靠度 $Z$ 定義為兩元件可靠度的乘積：
+  $$Z = X \cdot Y$$
+  這是因為在串聯系統中，若任意一個元件失效，系統即失效。因此，系統的可靠度等於所有元件可靠度的乘積。</p>
 </li>
-<li><p>組合邏輯：在串聯系統中，只要其中一個元件壞掉，整個系統也會隨之壞掉，因此其可靠度可表達成系統中所有元件之間的相乘。</p>
+</ul>
+<p>$\quad$</p>
+<ul>
+<li><p>機率密度函數的推導過程：</p>
+<p>已知  $X \sim \beta(a_1, b_1)$，$Y \sim \beta(a_2, b_2)$，建立新變數 $Z = XY$，並引入輔助變數 $V = Y$</p>
+<ol>
+<li><p>$Z$ 的 <strong>Support</strong>：</p>
+<p>已知 $0 &lt; x &lt; 1$，$0 &lt; y &lt; 1$，其中 $Y$ 為固定值（<strong>Fixed Value</strong>），$Y = V = v$，推得
+ $$\begin{align*} 0 &lt; xy &lt; y &lt; 1 \Rightarrow 0 &lt; z &lt; v &lt; 1 \end{align*}$$</p>
+</li>
+<li><p><strong>Jacobian</strong> 計算：</p>
+<p>已知 $X = \frac{Z}{Y}，Y = V$，推得</p>
+<ul>
+<li><p>$\large \frac{\partial x}{\partial z} = \frac{\partial}{\partial z}(\frac{z}{y}) = \frac{1}{y}$</p>
+</li>
+<li><p>$\large \frac{\partial x}{\partial v} = \frac{\partial}{\partial v}(\frac{z}{y}) = \frac{\partial}{\partial v}(\frac{z}{v}) = -\frac{z}{v^2}$</p>
+</li>
+<li><p>$\large \frac{\partial y}{\partial z} = \frac{\partial}{\partial z}(v) = 0$</p>
+</li>
+<li><p>$\large \frac{\partial y}{\partial v} = \frac{\partial}{\partial v}(v) = 1$</p>
+<p>$$
+\begin{align*}
+J &amp;= \frac{\partial x}{\partial z} \cdot \frac{\partial y}{\partial v} - \frac{\partial y}{\partial z} \cdot \frac{\partial x}{\partial v} \\
+&amp;= \left(\frac{1}{y} \cdot 1\right) - \left(0 \cdot -\frac{z}{v^2}\right) \\
+&amp;= \frac{1}{y}
+\end{align*}
+$$</p>
 </li>
 </ul>
 </li>
-<li><p>串聯系統的機率密度函數推導過程：</p>
+<li><p>建立 <strong>Joint PDF</strong> $f_{Z, V}(z, v)$：
+ $$
+ \begin{align*}
+ f_{Z, V}(z, v) &amp;= f_{X, Y}\left(\frac{z}{y}, y\right)\left|J\right| \\
+ &amp;= f_{X}\left(\frac{z}{y}\right)f_Y(y) \cdot \frac{1}{y} \\
+ \end{align*}
+ $$
+ 其中 $X \perp Y \Rightarrow f_{X, Y}(x, y) = f_X(x)f_Y(y)$。</p>
+<p>推導出 $Z$ 的 <strong>Marginal PDF</strong>：
+ $$
+ \begin{align*}
+ f_{Z}(z) &amp;= \int_z^1 f_X\left(\frac{z}{y}\right)f_{Y}(y) \cdot \frac{1}{y} dy \\
+ \end{align*}
+ $$</p>
+</li>
+</ol>
 </li>
 </ul>
 <hr>
-<p><strong>2. 並聯系統的變數表達式以及機率密度函數的推導過程</strong></p>
+<p><strong>2. 並聯系統的變數與機率密度函數的推導過程</strong></p>
 <ul>
-<li><p>並聯系統的變數表達式：</p>
-<ul>
-<li><p>令一獨立變數為元件 $X$ 的可靠度，分佈為 $X \sim \beta(a_1, b_1)$。若要利用相同元件並聯的方式連接在一起組成一個新的組合元件（$Z$ 表示為此組合元件的可靠度變數），則可推導出 $1 - (1 - X)^2$ 的式子，便可代表新的組合元件 $Z$ 的可靠度。</p>
+<li><p>變數的推導邏輯：</p>
+<p>在並聯系統中，假設元件的可靠度 $X$ 遵循獨立的 <strong>Beta</strong> 分佈：
+  $$X \sim \beta(a_1, b_1)$$
+  並聯系統的可靠度 $Z$ 定義為系統中至少一個元件運行正常的概率。由於並聯系統中，只要其中一個元件正常運作，整個系統即可運作，因此 $Z$ 為
+  $$Z = 1 - (1 - X)^2$$</p>
+<p>推導邏輯：</p>
+<ol>
+<li><p>$1 - X$ 表示單個元件失效的概率。</p>
 </li>
-<li><p>組合邏輯：在並聯系統中，當其中一個元件壞掉時，不會影響其他元件的運作，因此只有當所有元件同時壞掉時，整個系統才會隨之壞掉，因此每個元件壞掉的情況可表達成 $1 - X$，而所有元件同時壞掉的情況為 $(1 - X)^n$，故其可靠度可表達成 1 - 所有元件同時壞掉的情況，即 $1 - (1 - X)^n$。</p>
+<li><p>$(1 - X)^2$ 表示在假設兩元件彼此獨立下，兩個並聯元件同時失效的概率。</p>
+</li>
+<li><p>並聯系統的可靠度等於 1 減去所有元件同時失效的概率，因此
+$$Z = 1 - (1 - X)^2$$</p>
+</li>
+</ol>
 </li>
 </ul>
+<p>$\quad$</p>
+<ul>
+<li><p>機率密度函數的推導過程：</p>
+<p>已知 $X \sim \beta(a_1, b_1)$，建立新變數 $Z = 1 - (1 - X)^2$</p>
+<ol>
+<li><p>$Z$ 轉換成 $X$：</p>
+<p>$$
+\begin{align*}
+Z &amp;= 1 - (1 - X)^2 \\
+\Rightarrow 1 - Z &amp;= (1 - X)^2 \\
+\Rightarrow \sqrt{1 - Z} &amp;= 1 - X \\
+\Rightarrow X &amp;= 1 - \sqrt{1 - Z}
+\end{align*}
+$$</p>
 </li>
-<li><p>並聯系統的機率密度函數推導過程：</p>
+<li><p><strong>Jacobian</strong> 計算：
+ $$
+ \begin{align*}
+ \frac{dx}{dz} &amp;= \frac{d}{dz}(1 - \sqrt{1 - z}) \\
+ &amp;= -\frac{1}{2}\frac{1}{\sqrt{1 - z}} \cdot -1 \\
+ &amp;= \frac{1}{2\sqrt{1 - z}}
+ \end{align*}
+ $$</p>
+</li>
+<li><p>建立 $f_{Z}(z)$：
+ $$
+ \begin{align*}
+ f_{Z}(z) &amp;= f_X(1 - \sqrt{1 - z})\left|\frac{dx}{dz}\right| \\
+ &amp;= f_X(1 - \sqrt{1 - z})\left|\frac{1}{2\sqrt{1 - z}}\right| \\
+ &amp;= \frac{f_X(1 - \sqrt{1 - z})}{2\sqrt{1 - z}} \\
+ \end{align*}
+ $$</p>
+</li>
+</ol>
 </li>
 </ul>
 <hr>
