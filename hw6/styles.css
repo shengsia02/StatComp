@@ -1,0 +1,14 @@
+/* 調整主標題字體大小與顏色 */
+h1.title {
+  font-size: 28px;  /* 原本約 38–42px，可改為 28、24、20... */
+  /* color: #336699;   可選：變更顏色 */
+  /* font-weight: 700; */
+}
+
+/* 調整作者與日期區塊樣式 */
+.quarto-title-author,
+.quarto-title-published {
+  font-size: 18;  /* 預設大約是 16px，可調小一點 */
+  /*color: #444444;    改為稍微淡一點的灰色 */
+  font-weight: bold;
+}
