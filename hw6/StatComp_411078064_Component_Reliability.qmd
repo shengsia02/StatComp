@@ -1,7 +1,8 @@
 ---
-title: <strong><font color=cornflowerblue>第六次作品：不同元件結構的可靠度分析與模擬</font></strong>
+title: "作品六：不同元件結構的可靠度分析與模擬"
 author: "謝意盛"
-date: "2025-03-14"
+date: "2025-01-03"
+lang: zh
 format:
   html:
     self-contained: true
@@ -12,12 +13,12 @@ format:
     toc-depth: 4
     # code-fold: true
 execute:
-#   freeze: true      # 每次都重新執行
-#   echo: true         # 顯示程式碼
-#   warning: false      # 顯示警告
-#   message: true      # 顯示訊息
-#   cache: false       # 不快取
-  eval: false         # 執行程式碼
+   freeze: auto      # 每次都重新執行
+   echo: true         # 顯示程式碼
+   warning: false      # 顯示警告
+   message: true      # 顯示訊息
+   cache: false       # 不快取
+   eval: true         # 執行程式碼
 jupyter: python3
 ---
 
@@ -1070,7 +1071,7 @@ for i in range(len(Z)):
     plt.title(title, fontsize = 15, color = 'black')
     plt.tick_params(axis = 'both', labelsize = 12, colors = 'black')
     lgd = plt.legend(edgecolor = '#666666', prop = {'size': 11}, frameon = True \
-                    , bbox_to_anchor = (1.47, 0.74))
+                    , bbox_to_anchor = (1.5, 0.74))
     lgd.get_frame().set_linestyle('-.')
     lgd.get_frame().set_alpha(0.4)
     lgd.get_frame().set_linewidth(1)
@@ -1099,7 +1100,7 @@ for i in range(len(Z)):
 <hr>
 <hr>
 
-### <strong><font color=cornflowerblue>附錄</font></strong>：
+### <strong><font color=cornflowerblue>附錄：機率密度函數之推導</font></strong>
 
 **1. 串聯系統的變數與機率密度函數的推導過程**
 
